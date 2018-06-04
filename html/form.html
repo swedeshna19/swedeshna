@@ -13,13 +13,19 @@
 
   <script>
     function results()
-      {
+      { 
+        // // e.preventDefault(0)
+        // let form_name =document.getElementsByTagName('form'); 
+        // console.log(form_name);
+       
+        // // console.log(data);
+        
         let firstName=document.getElementById('fname').value; 
         console.log(firstName);
         let lastName=document.getElementById('lname').value;
         console.log(lastName);
 
-            if(document.getElementById(male).checked)
+            if(document.getElementById('male').checked)
             {
                 poll=document.getElementById('male').value;
                 
@@ -31,6 +37,8 @@
                 
             }
             console.log(poll);
+            return false;
+            
 
         }
   
@@ -41,7 +49,7 @@
 
 
 
-    <form id="details" method="POST" onsubmit="javascript:return results();"  >
+    <form  method="POST" onsubmit="javascript:return results();"  >
       <h3>First Name:</h3>
 
       <input type="text" id="fname"  />
@@ -50,9 +58,13 @@
       <input type="text" id="lname"  />
 
        <h3>Gender:</h3> 
-      Male<input type="radio" id="male" name="gender" /> Female<input type="radio" id="female" name="gender" /> </br> 
-      </form> 
-    <button onclick="results()"  value="submit">submit</button>
+      Male<input type="radio" id="male" name="gender" value="male" /> Female<input type="radio" id="female" name="gender" value="female" /> </br> 
+
+      <input type="submit"   value="submit"/>
+    
+    </form> 
+
+    
 
     
 </body>
