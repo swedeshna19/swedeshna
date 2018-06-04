@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+  <script>
+    function results()
+    {
+    let firstName=document.getElementById('fname').value; 
+    console.log("results.value");
+    let lastName=document.getElementById('lname').value;
+    console.log("lastName");
+    }
+    results();
+    
+    
+
+  </script>
+
+
+
+    <form  method="POST" onsubmit="return results();"  >
+      <h3>First Name:</h3>
+
+      <input type="text" id="fname" name="fname" />
+      
+      <h3>Last Name:</h3>
+      <input type="text" id="lname" name="lname" />
+
+      <!-- <h3>Gender:</h3>
+      Male<input type="radio" id="male" name="gender" /> Female<input type="radio" id="female" name="gender" /> </br> -->
+
+      <input type="submit" id="submit" value="submit" />
+      
+
+
+
+    </form> 
+
+    
+</body>
+</html>
