@@ -47,9 +47,9 @@
                                     <img src="/html/styles/images/logo.png">
                                 </a>
                             </div>
-                            <div class="navbar-menu">
-                                <div class="navbar-end">
-                                    <a class="navbar-item is-active">features</a>
+                            <div class="navbar-menu ">
+                                <div class="navbar-end ">
+                                    <a class="navbar-item is-active ">features</a>
                                     <a class="navbar-item is-active">pricing</a>
                                     <a class="navbar-item is-active">company</a>
                                     <a class="navbar-item is-active">log In</a>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="hero-body">  
                         <div class="container has-text-centered">
-                          <h1 class="intro-heading">Join more than 1000+ satisfied users</h1>
+                          <h1 class="intro-heading is-mobile">Join more than 1000+ satisfied users</h1>
                           <div class="subtitle">
                                 <p>People are definitely a company's greatest asset. It doesn't make any difference 
                                 whether the product is cars or cosmetics. A company is only as good as the people it keeps.</p>
@@ -206,12 +206,22 @@
                                     YOU WANT
                                 </div>
     
-                                    <div class="button-container">
-                                    <h1>Annually</h1>
-                                    <button class="choice">
-                                        Monthly
-                                    </button>
-                                    </div>
+                                    <!-- toogle switch -->
+
+                                    <form class="form">
+                                        <div class="switch-field">
+                                          
+                                          <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+                                          <label for="switch_left">MONTHLY</label>
+                                          <input type="radio" id="switch_right" name="switch_2" value="no" />
+                                          <label for="switch_right">ANNUALLY</label>
+                                        </div>
+                                      
+                                        
+                                    </form>
+
+                                    <!-- toggle switch ends -->
+
                                     <div class="subscription-text">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid dubitas igitur mutare principia naturae.
         
