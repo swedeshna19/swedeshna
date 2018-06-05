@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <script>
+        customer={
+            nam:"swedeshna mohanty",
+            speak:function(){
+                return "my name is " + this.nam;
+            },
+
+            address:{
+                stre:"niladri vihar",
+                city:"bhubaneswar",
+                state:"odisha"
+            }
+        };
+
+        document.write(customer.speak() );
+
+
+        // constructor function
+
+        function person(name,street){
+            this.nam=name;    //this name is already declared in the above section
+            this.stre=street; //here the arguements have values of nam n stre 
+
+            this.info=function() //this becomes the info function
+            {
+                return "My name is  " + this.nam + " and i live on  " +
+                this.stre + "<br />";
+            }
+        }
+
+        let sweden=new person(" mohanty","niladri vihar")
+        document.write(person.info());
+
+        // change of the name
+
+        function changeName(person){  //this function contains thevalues of name n street thts y it is called
+            person.name="reema";    //we assigned this value .name as reema
+
+        }
+        changeName(sweden;  //we are passing the sweden object
+        document.write(" swedeshna becomes " + person.name + " " + "<br />");
+    </script>
+    
+</body>
+</html>
