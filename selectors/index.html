@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+  
+</head>
+<body>
+    <div class="container">
+        <h1>jquery</h1>
+        <h2 id="heading1">heading 1</h2>
+        <p class="is-primary para1">this is the first jquery webpage</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis doloremque magnam ratione consequuntur! Nulla, ullam aut magni tempora at impedit amet officiis perspiciatis harum porro sit ipsum, sunt quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, impedit est! Quos nesciunt quis omnis amet molestias consectetur hic quaerat nihil. Deleniti ea doloribus voluptate maiores explicabo, culpa error nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis doloremque magnam ratione consequuntur! Nulla, ullam aut magni tempora at impedit amet officiis perspiciatis harum porro sit ipsum, sunt quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, impedit est! Quos nesciunt quis omnis amet molestias consectetur hic quaerat nihil. Deleniti ea doloribus voluptate maiores explicabo, culpa error nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis doloremque magnam ratione consequuntur! Nulla, ullam aut magni tempora at impedit amet officiis perspiciatis harum porro sit ipsum, sunt quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Vitae, impedit est!</span> Quos nesciunt quis omnis amet molestias consectetur hic quaerat nihil. Deleniti ea doloribus voluptate maiores explicabo, culpa error nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis doloremque magnam ratione consequuntur! Nulla, ullam aut magni tempora at impedit amet officiis perspiciatis harum porro sit ipsum, sunt quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, impedit est! Quos nesciunt quis omnis amet molestias consectetur hic quaerat nihil. Deleniti ea doloribus voluptate maiores explicabo, culpa error nisi.
+            
+        </p>
+
+        <h2>heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta beatae ex placeat aliquam cum voluptatibus nulla vel quidem. Inventore dolores tenetur sint debitis accusamus minus ex consectetur quam corporis!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur cumque necessitatibus. Necessitatibus, quibusdam quod quisquam ex id odio, quis a iste quas perferendis adipisci fugit sapiente possimus ea ducimus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>Aspernatur consectetur</span> cumque necessitatibus. Necessitatibus, quibusdam quod quisquam ex id odio, quis a iste quas perferendis adipisci fugit sapiente possimus ea ducimus.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat soluta beatae ex placeat aliquam cum voluptatibus nulla vel quidem. Inventore dolores tenetur sint debitis accusamus minus ex consectetur quam corporis!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur cumque necessitatibus. Necessitatibus, quibusdam quod quisquam ex id odio, quis a iste quas perferendis adipisci fugit sapiente possimus ea ducimus.
+
+        </p>
+
+        <ul id='list1'>
+            <li>list-items</li>
+            <li>list-items</li>
+            <li>list-items</li>
+            <li>list-items</li>
+            <li>list-items</li>
+            
+        </ul>
+
+        <ul id='list2'>
+                <li>list-items</li>
+                <li>list-items</li>
+                <li>list-items</li>
+                <li>list-items</li>
+                <li>list-items</li>
+                
+            </ul>
+
+            <ul id='list3'>
+                    <li>list-items</li>
+                    <li>list-items</li>
+                    <li>list-items</li>
+                    <li>list-items</li>
+                    <li>list-items</li>
+                    
+                </ul>
+
+        <input type="button" value="button1" id='button'>
+        <input type="submit" value="submit" id='sub'>
+        <input type="text">
+        <a href="http://google.com">google</a>
+        <a href="http://yahoo.com">yahoo</a>
+
+
+    </div>
+
+   <script>
+       $('#heading1').hide();
+       $('p span').css('color' , 'red');
+       $('ul#list1 li:first').css('color','red');
+       $('ul#list1 li:last').css('color' , 'green');
+       $('ul#list1 li:even').css('color' , 'blue');
+       $(':text').hide();
+       $('a[href="http://yahoo.com"]').css('color' , 'green');
+    //    $('[href]').css('color' , 'yellow')
+   </script>
+</body>
+</html>
